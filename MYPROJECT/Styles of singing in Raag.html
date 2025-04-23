@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second page</title>
+    <link rel="stylesheet" href="CSS/Second page/Pictures/Second page Pictures.CSS">
+    <link rel="stylesheet" href="CSS/Second page/Text/Second page Text.CSS">
+    <link rel="stylesheet" href="CSS/Menu/Menu.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="Index page.html">
+                <img width="80" src="images/Raag image.PNG" alt="My logo" />
+            </a>
+            
+        </div>
+        <button class="hamburger-menu">
+            &#9776;
+        </button>
+        <nav id="main-nav">
+            <button class="close-menu">
+                &#10006;
+            </button>
+            <ul>
+                <li><a href="What is Raag.html">What is Raag</a></li>
+                <li><a href="Styles of singing in Raag.html">Styles of singing in Raag</a></li>
+                <li><a href="contact.html">contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const closeMenu = document.querySelector('.close-menu');
+        const nav = document.getElementById('main-nav');
+    
+        hamburgerMenu.addEventListener('click', () => {
+            nav.classList.add('open');
+        });
+    
+        closeMenu.addEventListener('click', () => {
+            nav.classList.remove('open');
+        });
+    </script>
+
+
+</body>
+
+</html>
